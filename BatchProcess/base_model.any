@@ -1,0 +1,25 @@
+#path ANYBODY_PATH_OUTPUT "."
+#include"<ANYBODY_PATH_INSTALLDIR>/AMMR/Application/libdef.any"
+
+#define BM_TRUNK_MUSCLES OFF
+#define BM_ARM_MUSCLES_BOTH OFF
+#define BM_LEG_MUSCLES_BOTH OFF
+
+
+Main = {
+    
+  AnyInputC3D C3D_data = 
+  {
+    FileName = "c3d_files/" + ANYBODY_NAME_MAINFILEDIR + ".c3d";
+  };
+  
+  #include "<ANYBODY_PATH_BODY>\HumanModel.any" 
+  
+  AnyBodyStudy Study =
+  {
+     Gravity = {0, -9.82, 0};
+     AnyFolder& BodyModel = .HumanModel.BodyModelWithDefaultDrivers;  
+     nStep = 1;
+  };
+
+};
