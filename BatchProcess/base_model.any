@@ -11,6 +11,8 @@ Main = {
   AnyInputC3D C3D_data = 
   {
     FileName = "c3d_files/" + ANYBODY_NAME_MAINFILEDIR + ".c3d";
+    
+    ConstructChartOnOff = Off;
   };
   
   #include "<ANYBODY_PATH_BODY>\HumanModel.any" 

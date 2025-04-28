@@ -1,0 +1,15 @@
+#include"<ANYBODY_PATH_INSTALLDIR>/AMMR/Application/libdef.any"
+
+#define EVALUATE_MOMENT_ARMS ON
+
+//#include "<ANYBODY_PATH_BODY>\Documentation\BodyModel.parameters.any"
+#define BM_ARM_LEFT OFF
+#define BM_ARM_RIGHT OFF
+#define BM_LEG_LEFT CONST_LEG_MODEL_OFF
+#define BM_TRUNK_MUSCLES OFF
+
+Main = {
+  
+  #include "<ANYBODY_PATH_BODY>\HumanModel.any" 
+
+};

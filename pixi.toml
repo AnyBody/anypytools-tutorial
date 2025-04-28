@@ -7,7 +7,6 @@ platforms = ["win-64"]
 start = {cmd="jupyter lab"}
 
 
-
 [dependencies]
 python = ">=3.12.3,<3.13"
 jupyter = ">=1.1.1,<2"
