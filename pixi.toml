@@ -1,0 +1,16 @@
+[workspace]
+channels = ["https://prefix.dev/conda-forge", "https://prefix.dev/anybody"]
+name = "anypytools-tutorial"
+platforms = ["win-64"]
+
+[tasks]
+start = "jupyter lab"
+
+[dependencies]
+python = ">=3.13.3,<3.14"
+jupyter = ">=1.1.1,<2"
+anybodycon = ">=8.1.1,<9"
+anypytools = ">=1.14.0,<2"
+matplotlib = ">=3.10.1,<4"
+pandas = ">=2.2.3,<3"
+seaborn = ">=0.13.2,<0.14"
