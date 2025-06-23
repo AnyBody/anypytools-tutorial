@@ -190,7 +190,7 @@ Main = {
       Reaction.Type ={Off};
     };
 
-AnyViaPointMuscle Quadriceps = {
+AnyMuscleViaPoint Quadriceps = {
       AnyMuscleModel Model = {
         F0 = 1000;
       };
